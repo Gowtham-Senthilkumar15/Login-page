@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        a {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h2>Welcome to the Home Page!</h2>
+        <p>This is your secure area.</p>
+        <a href="#" id="logout">Logout</a>
+    </div>
+
+    <script>
+        // JavaScript to handle logout
+        document.getElementById('logout').addEventListener('click', function(e) {
+            e.preventDefault();
+            // Perform logout actions if needed
+            // Redirect to login page
+            window.location.href = 'chat.html'; // Replace with your login page URL
+        });
+    </script>
+</body>
+</html>
